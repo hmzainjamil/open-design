@@ -735,3 +735,24 @@ The magazine / horizontal-swipe deck flow under [`skills/guizang-ppt/`](skills/g
 ## License
 
 Apache-2.0. The bundled `skills/guizang-ppt/` retains its original [LICENSE](skills/guizang-ppt/LICENSE) (MIT) and authorship attribution to [op7418](https://github.com/op7418). The bundled `skills/html-ppt/` retains its original [LICENSE](skills/html-ppt/LICENSE) (MIT) and authorship attribution to [lewislulu](https://github.com/lewislulu).
+
+## ☠️ STARTUPS / BUSINESSES
+
+| This Repo / Feature | Replaced |
+|-|-|
+| **Open Design system** | [Figma](https://figma.com), [Sketch](https://sketch.com), [Adobe XD](https://adobe.com/xd) |
+| **Design automation** | [Canva](https://canva.com), [Stencil](https://getstencil.com) |
+| **AI design generation** | [Midjourney](https://midjourney.com), [Dall-E](https://openai.com/dall-e-3) — integrated here |
+| **Design pipeline** | [Zeplin](https://zeplin.io), [Avocode](https://avocode.com) — free here |
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=hmzainjamil/open-design&type=Date)](https://star-history.com/#hmzainjamil/open-design&Date)
+
+---
+
+<div align="center">
+Built by <a href="https://github.com/hmzainjamil">HMZ</a> · Open-source design system for DigiMinds
+</div>
