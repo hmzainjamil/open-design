@@ -29,6 +29,43 @@
 
 ---
 
+## CONCEPTS
+
+| Concept | Description |
+|---|---|
+| **Coding-Agent CLIs (11)** | Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Qwen, Copilot CLI, Hermes, Kimi, Pi, Kiro — auto-detected on `PATH` |
+| **Skills (31)** | Composable design workflow units: web-prototype, saas-landing, magazine-poster, deck, critique, wireframe-sketch, etc. |
+| **Design Systems (72+)** | Brand-grade palettes for Linear, Stripe, Vercel, Airbnb, Apple, Notion, Anthropic, Cursor — imported as Markdown specs |
+| **BYOK Proxy** | OpenAI-compatible `/api/proxy/stream` — paste any provider's baseUrl + apiKey to use DeepSeek, Groq, or self-hosted vLLM |
+| **Visual Directions** | 5 OKLch-calibrated design schools: Editorial Monocle, Modern Minimal, Warm Soft, Tech Utility, Brutalist Experimental |
+| **Daemon** | Local privileged process that PATH-scans agents, enforces pre-flight checklists, and manages on-disk project folders |
+| **Artifact Loop** | Agent reads skill + design system → runs 5-dimensional self-critique → emits `<artifact>` into sandboxed iframe preview |
+| **Media Layer** | gpt-image-2 for posters · Seedance 2.0 for video · HyperFrames for HTML→MP4 motion graphics |
+
+## 🔥 Hot Commands
+
+```bash
+# Install and run locally
+pnpm install && pnpm tools-dev
+# → http://localhost:3000
+
+# Deploy web layer to Vercel
+vercel deploy
+
+# List all available skills
+ls skills/
+
+# Run a specific skill via CLI agent
+claude "use skill: saas-landing — build a pitch page for a B2B SaaS"
+
+# Start the daemon (required for local agent spawning)
+pnpm daemon
+```
+
+## ■ tip
+> Swap agents mid-session: the PATH-scan runs on every request — add `kimi` or `gemini` to your `PATH` and they appear in the picker instantly. No config file needed. Source: [multica-ai daemon architecture](https://github.com/multica-ai/multica)
+
+
 ## Why this exists
 
 Anthropic's [Claude Design][cd] (released 2026-04-17, Opus 4.7) showed what happens when an LLM stops writing prose and starts shipping design artifacts. It went viral — and stayed closed-source, paid-only, cloud-only, locked to Anthropic's model and Anthropic's skills. There is no checkout, no self-host, no Vercel deploy, no swap-in-your-own-agent.
@@ -756,3 +793,4 @@ Apache-2.0. The bundled `skills/guizang-ppt/` retains its original [LICENSE](ski
 <div align="center">
 Built by <a href="https://github.com/hmzainjamil">HMZ</a> · Open-source design system for DigiMinds
 </div>
+
